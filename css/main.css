@@ -60,7 +60,9 @@ body{
 }
 .metting_img{
     width: 200px;
+    height: 300px;
 }
+
 .over{
     position: absolute;
     top: 0;
@@ -73,6 +75,23 @@ body{
     justify-content: center;
     align-items: center;
     color: #fff;
+    background-image: url('./../img/metting.png');
+    transition: .5s;
+}
+.over:hover{
+    background-image: url('./../img/bg.png');
+}
+.ellipes{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 80px;
+    height: 80px;
+    background-image: url('./../img/Ellipse.png');
+    transition: .5s;
+}
+.over:hover .ellipes{
+    background-image: url('./../img/Ellipse 3.png');
 }
 .line{
     width: 100%;
@@ -84,13 +103,7 @@ body{
     height: 3px;
     background-color: var(--lighGray);
 }
-.ellipes{
-    position: absolute;
-    bottom: 0;
-    right: 0px;
-    width: 80px;
-    height: 80px;
-}
+
 .num{
     position: absolute;
     bottom: 0px;
@@ -118,15 +131,10 @@ body{
 
 .Ellipse5{
     position: absolute;
-    bottom: 25px;
-    right: -50px;
-    width: 100px;
-}
-.Ellipse52{
-    position: absolute;
-    top: 25px;
-    left: -25px;
-    width: 50px;
+    bottom: 0px;
+    right: -20px;
+    width: 150px;
+    z-index: -2;
 }
 .overly_img{
     position: absolute;
